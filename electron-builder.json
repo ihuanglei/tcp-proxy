@@ -1,0 +1,32 @@
+{
+  "appId": "org.huanglei.electron.domain",
+  "productName": "TCP Proxy",
+  "copyright": "Copyright @ 2021-2025 huanglei",
+  "buildVersion": "0.1",
+  "compression": "store",
+  "linux": {
+    "icon": "resources/app.png",
+    "target": "zip",
+    "executableName": "tcp-proxy"
+  },
+  "win": {
+    "icon": "resources/icon.ico",
+    "artifactName": "tcp-proxy",
+    "requestedExecutionLevel": "requireAdministrator"
+  },
+  "mac": {
+    "artifactName": "tcp-proxy"
+  },
+  "directories": {
+    "output": "build"
+  },
+  "files": [{
+      "from": "dist/main/"
+    },
+    {
+      "from": "dist/renderer/"
+    },
+    "package.json"
+  ],
+  "extraFiles": []
+}
